@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Local_Restaurant_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#d2d6ff"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="아워프레임"
+                android:id="@+id/text_restaurant_name"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="혜화동"
+                android:id="@+id/text_location"
+                android:layout_below="@+id/text_restaurant_name"
+                android:layout_toLeftOf="@+id/image_icon"
+                android:layout_toStartOf="@+id/image_icon" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/image_icon"
+                android:layout_alignTop="@+id/text_location"
+                android:layout_toLeftOf="@+id/text_restaurant_name"
+                android:layout_toStartOf="@+id/text_restaurant_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="쉬림프 &amp; 파스타 전문점"
+                android:id="@+id/text_menu"
+                android:layout_alignTop="@+id/image_icon"
+                android:layout_toRightOf="@+id/image_icon"
+                android:layout_toEndOf="@+id/image_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
